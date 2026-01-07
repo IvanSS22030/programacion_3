@@ -1,5 +1,0 @@
-C:\Users\IvanJ\Escritorio\Uapa universidad\Programacion 2\Proyecto Final\Tests\obj\Debug\net5.0\ProyectoFinal.Tests.csproj.AssemblyReference.cache
-C:\Users\IvanJ\Escritorio\Uapa universidad\Programacion 2\Proyecto Final\Tests\obj\Debug\net5.0\ProyectoFinal.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\IvanJ\Escritorio\Uapa universidad\Programacion 2\Proyecto Final\Tests\obj\Debug\net5.0\ProyectoFinal.Tests.AssemblyInfoInputs.cache
-C:\Users\IvanJ\Escritorio\Uapa universidad\Programacion 2\Proyecto Final\Tests\obj\Debug\net5.0\ProyectoFinal.Tests.AssemblyInfo.cs
-C:\Users\IvanJ\Escritorio\Uapa universidad\Programacion 2\Proyecto Final\Tests\obj\Debug\net5.0\ProyectoFinal.Tests.csproj.CoreCompileInputs.cache

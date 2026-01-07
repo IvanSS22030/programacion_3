@@ -27,8 +27,8 @@ namespace ProyectoFinal.Forms
             menuFile.DropDownItems.Add("Salir", null, (s, e) => Application.Exit());
 
             ToolStripMenuItem menuConverters = new ToolStripMenuItem("Conversores");
-            menuConverters.DropDownItems.Add("Kg a Lb", null, (s, e) => new KgToLbForm().Show());
-            menuConverters.DropDownItems.Add("Lb a Kg", null, (s, e) => new LbToKgForm().Show());
+            menuConverters.DropDownItems.Add("Kilogramos a Libras", null, (s, e) => new KgToLbForm().Show());
+            menuConverters.DropDownItems.Add("Libras a Kilogramos", null, (s, e) => new LbToKgForm().Show());
             menuConverters.DropDownItems.Add("Conversor Combinado", null, (s, e) => new CombinedConverterForm().Show());
 
             ToolStripMenuItem menuInventory = new ToolStripMenuItem("Inventario");
