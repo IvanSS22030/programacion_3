@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "aTjtPv4gZG1cUd6bDgwfMB4dWE3krEpjSnSMrOC84zd80g2da3Qo3Q0DGZIbXs66CQ3zrJLqusJYr9ETPDVsHg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\IvanJ\\Escritorio\\Uapa universidad\\Programacion 2\\Proyecto Final\\ProyectoFinal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IvanJ\\.nuget\\packages\\npgsql\\6.0.0\\npgsql.6.0.0.nupkg.sha512",
+    "C:\\Users\\IvanJ\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
