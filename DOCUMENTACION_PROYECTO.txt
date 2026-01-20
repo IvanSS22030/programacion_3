@@ -1,0 +1,101 @@
+DOCUMENTACIÓN TÉCNICA Y FUNCIONAL DEL PROYECTO FINAL
+ASIGNATURA: PROGRAMACIÓN 2
+AUTOR: [Tu Nombre]
+FECHA: Enero 2026
+
+================================================================================
+1. INTRODUCCIÓN Y VISIÓN GENERAL
+================================================================================
+
+Este proyecto representa la culminación de los conocimientos adquiridos en Programación 2, integrando tres módulos funcionales distintos bajo una arquitectura unificada y profesional de Windows Forms.
+
+El objetivo principal no fue solo "hacer que funcione", sino aplicar principios de Ingeniería de Software avanzados, como Patrones de Diseño (Strategy), Arquitectura en Capas (N-Tier), y manejo robusto de Base de Datos relacional (PostgreSQL).
+
+Tecnologías Clave:
+- Lenguaje: C# (Versión 9.0)
+- Framework: .NET 5.0
+- Interfaz: Windows Forms (WinForms)
+- Base de Datos: PostgreSQL 17
+- Librerías Externas: Npgsql (para conectividad de datos)
+
+================================================================================
+2. ARQUITECTURA DEL SISTEMA
+================================================================================
+
+El proyecto sigue una arquitectura límpia dividida en carpetas lógicas para facilitar el mantenimiento y la escalabilidad:
+
+A. /Forms: Contiene toda la lógica de presentación (UI). Los formularios son "tontos", es decir, delegan la lógica pesada a los servicios.
+B. /Services: Contiene la lógica de negocio. Aquí viven los "Managers" y las "Strategies".
+C. /Models: Clases POCO (Plain Old CLR Objects) que representan entidades de datos (Paciente, InventoryItem).
+D. /Scripts: Scripts automatizados (PowerShell y SQL) para facilitar el despliegue en cualquier entorno.
+
+================================================================================
+3. MÓDULO 1: SISTEMA DE CONVERTIDORES (Patrón Strategy)
+================================================================================
+
+Este módulo demuestra el dominio de la Programación Orientada a Objetos avanzada.
+
+PROBLEMA:
+En aplicaciones tradicionales, las conversiones se hacen con múltiples `if/else` o `switch` dentro del formulario. Esto viola el principio "Open/Closed" de SOLID, ya que para agregar una nueva conversión, habría que modificar el código existente.
+
+SOLUCIÓN IMPLEMENTADA:
+Se implementó el **Patrón de Diseño Strategy**.
+
+1. Interfaz `IConversionStrategy`: Define un contrato que todas las estrategias deben cumplir (Método `Convert`).
+2. Clases Concretas:
+   - `KgToLbStrategy.cs`: Encapsula la lógica de Kg -> Lb.
+   - `LbToKgStrategy.cs`: Encapsula la lógica de Lb -> Kg.
+3. Consumo Dinámico:
+   - El formulario `CombinedConverterForm` no conoce los detalles matemáticos. Solo le pide a la estrategia seleccionada que ejecute la conversión.
+
+BENEFICIO ACADÉMICO:
+Esto permite agregar 50 nuevos tipos de conversión (Metros a Pies, Celsius a Fahrenheit, etc.) SIN tocar ni una sola línea de código de los formularios existentes.
+
+================================================================================
+4. MÓDULO 2: GESTIÓN DE PACIENTES (Base de Datos SQL)
+================================================================================
+
+Este es el módulo de persistencia de datos más robusto del sistema.
+
+CARACTERÍSTICAS PRINCIPALES:
+- CRUD Completo: Crear, Leer, Actualizar y Eliminar registros médicos.
+- Base de Datos PostgreSQL: Uso de un motor de base de datos empresarial real.
+- Uso de Stored Procedures: La lógica de inserción y modificación reside en SQL, no en C#, para mayor seguridad y rendimiento.
+  * `sp_insert_paciente`: Procedimiento almacenado para insertar.
+  * `sp_update_paciente`: Procedimiento para actualizaciones seguras.
+
+COMPONENTES CLAVE:
+1. `PacientesManager.cs`: Actúa como una capa de servicio. Maneja la apertura/cierre de conexiones y el manejo de excepciones de BD.
+2. `PacientesForm.cs`: Interfaz ergonómica que reutiliza el mismo espacio para crear y editar, cambiando dinámicamente según el contexto (Botonera inteligente).
+
+INNOVACIÓN EN DESPLIEGUE:
+Se incluye un script `create_pacientes_db.sql` que crea automáticamente las tablas y procedimientos necesarios, garantizando que el proyecto funcione en cualquier máquina del profesor.
+
+================================================================================
+5. MÓDULO 3: GESTIÓN DE INVENTARIO (UI/UX Avanzado)
+================================================================================
+
+Este módulo gestiona entradas y salidas de productos, pero su mayor logro es técnico en el área de Interfaz de Usuario.
+
+EL DESAFÍO DEL CALENDARIO ("The DateTimePicker Issue"):
+Durante el desarrollo, se identificó que el control nativo `DateTimePicker` de Windows tiene limitaciones severas para mostrar fechas totalmente en español (ignora a veces la CultureInfo de .NET).
+
+SOLUCIÓN DE INGENIERÍA:
+En lugar de usar una librería de terceros, se construyó un **Calendario Personalizado desde Cero** (`BuildCalendar` en `InventoryForm.cs`).
+
+- Lógica de renderizado manual de días y semanas.
+- Navegación mes a mes programada manualmente.
+- Totalmente localizado al español (Lunes, Martes... Enero, Febrero...).
+
+FUNCIONALIDAD DE NEGOCIO:
+- Cálculo en tiempo real de "Stock Neto" (Entradas - Salidas).
+- Validación estricta de datos (no permite cantidades negativas).
+- Historial visual mediante `DataGridView`.
+
+================================================================================
+6. CONCLUSIÓN
+================================================================================
+
+Este Proyecto Final cumple y excede los requerimientos académicos al entregar no solo un software funcional, sino una solución bien arquitecturada.
+
+Desde la flexibilidad del **Patrón Strategy**, pasando por la robustez de **PostgreSQL**, hasta la atención al detalle en la **Interfaz de Usuario personalizada**, cada línea de código fue escrita pensando en calidad profesional.
