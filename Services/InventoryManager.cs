@@ -8,7 +8,7 @@ namespace ProyectoFinal.Services
 {
     public class InventoryManager
     {
-        private string connString = "Host=localhost;Username=postgres;Password=Lucario2030*;Database=pacientesdb";
+        private string connString = "Host=localhost;Username=postgres;Password=Use your password;Database=pacientesdb";
 
         public void AddItem(InventoryItem item)
         {
