@@ -101,3 +101,5 @@ Este Proyecto Final cumple y excede los requerimientos académicos al entregar n
 Desde la flexibilidad del **Patrón Strategy**, pasando por la robustez de **PostgreSQL**, hasta la atención al detalle en la **Interfaz de Usuario personalizada**, cada línea de código fue escrita pensando en calidad profesional.
 
 <!-- Actualizaci�n de repositorio - 2026-04-08 -->
+
+

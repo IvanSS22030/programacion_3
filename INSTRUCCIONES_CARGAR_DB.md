@@ -25,3 +25,5 @@ Como no tengo acceso directo a tu instalación de PostgreSQL, debes ejecutar el 
     *   Deberías ver la tabla `pacientes`.
 
 <!-- Actualizaci�n de repositorio - 2026-04-08 -->
+
+

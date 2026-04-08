@@ -63,3 +63,5 @@ Ivan Joel Sánchez Santana - UAPA Universidad
 Proyecto académico - Programación 2
 
 <!-- Actualizaci�n de repositorio - 2026-04-08 -->
+
+
