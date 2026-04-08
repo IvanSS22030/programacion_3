@@ -23,3 +23,5 @@ Como no tengo acceso directo a tu instalación de PostgreSQL, debes ejecutar el 
 6.  **Verificar**:
     *   Expande Schemas -> public -> Tables.
     *   Deberías ver la tabla `pacientes`.
+
+<!-- Actualizaci�n de repositorio - 2026-04-08 -->

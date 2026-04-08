@@ -7,3 +7,5 @@ namespace ProyectoFinal.Services.Strategies
         string ToUnit { get; }
     }
 }
+
+// Actualización de repositorio - 2026-04-08

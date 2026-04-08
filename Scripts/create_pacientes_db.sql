@@ -78,7 +78,7 @@ BEGIN
 END;
 $$;
 
--- Delete (Eliminar)
+-- Delete 
 CREATE OR REPLACE PROCEDURE sp_delete_paciente(p_codigo INT)
 LANGUAGE plpgsql
 AS $$
@@ -87,8 +87,5 @@ BEGIN
 END;
 $$;
 
--- Ejemplos de uso:
--- CALL sp_insert_paciente('Juan', 'Perez', 'Calle 123', '555-1234', 'Activo');
--- SELECT * FROM fn_get_all_pacientes();
--- CALL sp_update_paciente(1, 'Juan Updated', 'Perez', 'Calle 123', '555-5555', 'Inactivo');
--- CALL sp_delete_paciente(1);
+
+-- Actualización de repositorio - 2026-04-08

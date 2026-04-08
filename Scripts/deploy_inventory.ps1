@@ -12,3 +12,5 @@ if ($LASTEXITCODE -eq 0) {
      Write-Error "Failed to deploy inventory table."
      exit 1
 }
+
+# Actualización de repositorio - 2026-04-08

@@ -23,3 +23,5 @@ namespace ProyectoFinal.Models
         public string EstatusPac { get; set; }
     }
 }
+
+// Actualización de repositorio - 2026-04-08

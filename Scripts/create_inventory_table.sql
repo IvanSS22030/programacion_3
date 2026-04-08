@@ -34,3 +34,5 @@ BEGIN
     DELETE FROM Inventario WHERE id = p_id;
 END;
 $$;
+
+-- Actualización de repositorio - 2026-04-08

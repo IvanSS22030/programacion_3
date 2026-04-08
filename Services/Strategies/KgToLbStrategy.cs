@@ -12,3 +12,5 @@ namespace ProyectoFinal.Services.Strategies
         }
     }
 }
+
+// Actualización de repositorio - 2026-04-08

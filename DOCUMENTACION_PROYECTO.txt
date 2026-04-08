@@ -99,3 +99,5 @@ FUNCIONALIDAD DE NEGOCIO:
 Este Proyecto Final cumple y excede los requerimientos acad茅micos al entregar no solo un software funcional, sino una soluci贸n bien arquitecturada.
 
 Desde la flexibilidad del **Patr贸n Strategy**, pasando por la robustez de **PostgreSQL**, hasta la atenci贸n al detalle en la **Interfaz de Usuario personalizada**, cada l铆nea de c贸digo fue escrita pensando en calidad profesional.
+
+<!-- Actualizaci髇 de repositorio - 2026-04-08 -->

@@ -12,3 +12,5 @@ namespace ProyectoFinal.Models
         public DateTime Date { get; set; }
     }
 }
+
+// Actualización de repositorio - 2026-04-08
