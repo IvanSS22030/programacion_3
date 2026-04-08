@@ -7,3 +7,5 @@ SELECT * FROM Inventario;
 SELECT COUNT(*) FROM Inventario;
 
 -- Actualización de repositorio - 2026-04-08
+
+-- Refine database query execution
