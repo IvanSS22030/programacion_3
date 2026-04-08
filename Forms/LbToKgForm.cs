@@ -69,3 +69,5 @@ namespace ProyectoFinal.Forms
 }
 
 // Actualización de repositorio - 2026-04-08
+
+// Optimize layout rendering
