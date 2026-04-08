@@ -40,3 +40,5 @@
 
 
 // Actualización de repositorio - 2026-04-08
+
+// Designer layout update

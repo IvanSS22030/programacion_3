@@ -21,3 +21,5 @@ namespace ProyectoFinal
 }
 
 // Actualización de repositorio - 2026-04-08
+
+// Main form initialization update
